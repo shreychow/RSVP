@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Event RSVP System</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+       <h1 class="event-title">🎉 Ready, Set, RSVP</h1>
+       <p class="event-tagline">A chill meetup where ideas spark, people connect, and good vibes flow.</p>
+
+
+       <form id="rsvpForm">
+           <h2>📝 Let's Get You Registered!</h2>
+
+
+           <label for="name">What should we call you?</label>
+           <input type="text" id="name" placeholder="e.g., John the Vibe Master" required />
+
+
+           <label for="email">Where should we send your secret party updates?</label>
+           <input type="email" id="email" placeholder="e.g., johndoe@email.com" required />
+
+
+           <label>Will you attend?</label>
+           <select id="attendance" required>
+               <option value="">Choose one</option>
+               <option value="yes">💃 Count me in!</option>
+               <option value="maybe">🤷 Might show up with a taco</option>
+               <option value="no">🙅 Can't make it, but I’ll be there in spirit</option>
+           </select>
+
+
+           <label for="food">Do you have any dietary preferences or restrictions?</label>
+           <input type="text" id="food" placeholder="e.g., Vegetarian, No peanuts, Loves pizza" />
+
+
+           <label for="theme">Our theme is “Retro Disco Under the Stars” — You down?</label>
+           <select id="theme">
+               <option value="">Choose one</option>
+               <option value="yes">🕺 Totally! Sequins are ready</option>
+               <option value="maybe">😬 I’ll try... no promises</option>
+               <option value="no">😶 What theme?</option>
+           </select>
+
+
+           <label for="song">What’s your ultimate party anthem?</label>
+           <input type="text" id="song" placeholder="e.g., Dancing Queen, Uptown Funk" />
+
+
+           <label for="talent">Got any talents to show off? (Optional)</label>
+           <input type="text" id="talent" placeholder="e.g., Karaoke, Backflips, Dad jokes" />
+
+
+           <label>Photo/Video Consent:</label>
+           <select id="consent">
+               <option value="">Choose one</option>
+               <option value="yes">📸 Yes, I love attention!</option>
+               <option value="okay">😎 Sure, just no embarrassing candids</option>
+               <option value="no">🙅 Please, no photos</option>
+           </select>
+
+
+           <label for="plusone">Bringing a plus-one? Who's the lucky human?</label>
+           <input type="text" id="plusone" placeholder="e.g., My bestie Sara" />
+
+
+           <label for="special">Any special requests, vibes, or surprises we should know about?</label>
+           <textarea id="special" placeholder="e.g., Needs wheelchair access, bringing confetti cannon"></textarea>
+
+
+           <div class="button-group">
+               <button type="submit">🚀 Let’s RSVP!</button>
+               <button type="reset">🔄 Reset Everything</button>
+           </div>
+       </form>
+
+
+       <hr />
+
+
+       <h2>🧾 Guest List</h2>
+       <ul id="guestList"></ul>
+   </div>
+
+
+   <script src="script.js"></script>
+</body>
+</html>
+
+
